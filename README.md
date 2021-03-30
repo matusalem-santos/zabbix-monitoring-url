@@ -14,8 +14,9 @@ Monitorar o health check das URL's
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
+- Necessário o protocolo da url estar explícito (**http** ou **https**)
 - Executar o script passando **"url" "usuario" "senha"** do zabbix como parametro, exemplo: 
 ```bash 
-    ./create_webScenario.py "http://url" "usuario" "senha" 
+    ./create_monitoring_url.py "http://url-zabbix" "usuario" "senha" 
 ```
 - Sera criado um host no Zabbix chamado **Monitoramento URL** que contera o monitoramento das URLs passadas no arquivo **urls.txt**
